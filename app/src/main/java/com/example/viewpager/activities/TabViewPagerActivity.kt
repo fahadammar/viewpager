@@ -2,7 +2,7 @@ package com.example.viewpager.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.viewpager.adapter.PagerAdapter
+import com.example.viewpager.adapter.PageAdapter
 import com.example.viewpager.databinding.ActivityTabViewPagerBinding
 
 class TabViewPagerActivity : AppCompatActivity() {
@@ -15,7 +15,7 @@ class TabViewPagerActivity : AppCompatActivity() {
         setContentView(view)
 
         val viewPager = binding.viewPager
-        viewPager.adapter = PagerAdapter(supportFragmentManager)
+        viewPager.adapter = PageAdapter(supportFragmentManager)
 
         val tabLayout = binding.tabLayout
         tabLayout.setupWithViewPager(viewPager)
