@@ -16,14 +16,26 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+        buttonClicks(binding)
     }
 
-    fun jumpToTabViewPagerActivity(v : View?){
+    private fun buttonClicks(binding: ActivityMainBinding) {
+        binding.appCompatButton.setOnClickListener(){
+            jumpToTabViewPagerActivity()
+        }
+
+        binding.appCompatButton2.setOnClickListener(){
+            jumpToImageViewPagerActivity()
+        }
+    }
+
+    fun jumpToTabViewPagerActivity(){
         val intent = Intent(this, TabViewPagerActivity::class.java)
         startActivity(intent)
     }
 
-    fun jumpToImageViewPagerActivity(v : View?){
+    fun jumpToImageViewPagerActivity(){
         val intent = Intent(this, ImageViewPagerActivity::class.java)
         startActivity(intent)
     }

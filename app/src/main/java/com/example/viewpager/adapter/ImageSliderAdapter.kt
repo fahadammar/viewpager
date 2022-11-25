@@ -9,10 +9,11 @@ import android.widget.RelativeLayout
 import androidx.viewpager.widget.PagerAdapter
 import com.example.viewpager.R
 
-class ImageSliderAdapter(var context : Context, var imageList: List<Int>) : PagerAdapter() {
+class ImageSliderAdapter(var context : Context, var imageList: ArrayList<Int>) : PagerAdapter() {
     override fun getCount(): Int {
         return imageList.size
     }
+
     // On Below Line We Are Returning Object
     override fun isViewFromObject(view: View, `object`: Any): Boolean {
         return view == `object` as RelativeLayout

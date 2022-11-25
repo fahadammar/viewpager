@@ -14,10 +14,10 @@
         android:theme="@style/Theme.ViewPager"
         tools:targetApi="31">
         <activity
-            android:name=".TabViewPagerActivity"
+            android:name=".activities.TabViewPagerActivity"
             android:exported="false" />
         <activity
-            android:name=".ImageViewPagerActivity"
+            android:name=".activities.ImageViewPagerActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
