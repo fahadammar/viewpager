@@ -8,9 +8,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textColor="@color/green"
-        android:textSize="50dp"
-        android:text="GFG 1"
+        android:textColor="@color/purple_500"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:text="@string/fragment_1"
     />
 
 </FrameLayout>

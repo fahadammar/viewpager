@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.viewpager.activities.CubeEffectActivity
+import com.example.viewpager.activities.DotsIndicatorActivity
 import com.example.viewpager.activities.ImageViewPagerActivity
 import com.example.viewpager.activities.TabViewPagerActivity
 import com.example.viewpager.databinding.ActivityMainBinding
@@ -34,6 +35,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.viewPagerCubeScalingAnimation.setOnClickListener {
             val intent = Intent(this, CubeEffectActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.dotsIndicatorButton.setOnClickListener {
+            val intent = Intent(this, DotsIndicatorActivity::class.java)
             startActivity(intent)
         }
     }

@@ -6,4 +6,7 @@
     <string name="image_slider_using_viewpager">Image Slider Using ViewPager</string>
     <string name="imageContentDescription">Image</string>
     <string name="cube_effect_viewpager">Cube Effect ViewPager</string>
+    <string name="fragment_1">Fragment 1</string>
+    <string name="fragment_3">Fragment 3</string>
+    <string name="dots_indicator_viewpager">Dots Indicator ViewPager</string>
 </resources>

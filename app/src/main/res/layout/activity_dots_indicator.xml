@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- ViewPager -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerDotIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+    />
+
+    <!-- Dots Indicator -->
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dotsIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:dotsColor="@android:color/holo_green_light"
+        app:selectedDotColor="@android:color/holo_green_dark"
+        app:dotsSize="15dp"
+        app:dotsSpacing="5dp"
+        app:progressMode="true"
+    />
+
+    <!-- Spring Dots Indicator  -->
+    <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+        android:id="@+id/springDotsIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:dotsColor="@android:color/holo_orange_light"
+        app:selectedDotColor="@android:color/holo_red_dark"
+        app:dotsSize="15dp"
+        app:dotsSpacing="5dp"
+        app:stiffness="300"
+    />
+
+    <!-- Worms Dots Indicator -->
+    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+        android:id="@+id/wormDotsIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:dotsColor="@android:color/holo_blue_bright"
+        app:selectedDotColor="@android:color/holo_orange_dark"
+    />
+</LinearLayout>
