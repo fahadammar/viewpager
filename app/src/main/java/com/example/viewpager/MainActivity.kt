@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.viewpager.activities.CubeEffectActivity
 import com.example.viewpager.activities.ImageViewPagerActivity
 import com.example.viewpager.activities.TabViewPagerActivity
 import com.example.viewpager.databinding.ActivityMainBinding
@@ -21,22 +22,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun buttonClicks(binding: ActivityMainBinding) {
-        binding.appCompatButton.setOnClickListener(){
-            jumpToTabViewPagerActivity()
+        binding.viewPagerTabLayout.setOnClickListener(){
+            val intent = Intent(this, TabViewPagerActivity::class.java)
+            startActivity(intent)
         }
 
-        binding.appCompatButton2.setOnClickListener(){
-            jumpToImageViewPagerActivity()
+        binding.viewPagerImageSlider.setOnClickListener(){
+            val intent = Intent(this, ImageViewPagerActivity::class.java)
+            startActivity(intent)
         }
-    }
 
-    fun jumpToTabViewPagerActivity(){
-        val intent = Intent(this, TabViewPagerActivity::class.java)
-        startActivity(intent)
-    }
-
-    fun jumpToImageViewPagerActivity(){
-        val intent = Intent(this, ImageViewPagerActivity::class.java)
-        startActivity(intent)
+        binding.viewPagerCubeScalingAnimation.setOnClickListener {
+            val intent = Intent(this, CubeEffectActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

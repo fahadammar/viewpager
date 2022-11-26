@@ -9,7 +9,7 @@ import android.widget.RelativeLayout
 import androidx.viewpager.widget.PagerAdapter
 import com.example.viewpager.R
 
-class ImageSliderAdapter(var context : Context, var imageList: ArrayList<Int>) : PagerAdapter() {
+class ImageSliderAdapter(var context : Context, var imageList: ArrayList<Int>, var changeImageSize : Boolean) : PagerAdapter() {
     override fun getCount(): Int {
         return imageList.size
     }
@@ -22,15 +22,25 @@ class ImageSliderAdapter(var context : Context, var imageList: ArrayList<Int>) :
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         // On Below line we are initializing our item and inflating our layout file
         val layoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+
         // On Below Line we are inflating our custom layout file which we have created
         val view : View = layoutInflater.inflate(R.layout.image_slider_item, container, false)
+
         // On Below line we are initializing our image view with the ID
         val imageView : ImageView = view.findViewById(R.id.imageView) as ImageView
 
         // On Below line we are setting image resource for image view
         imageView.setImageResource(imageList[position])
+
+        // setting the imageView size
+        if(changeImageSize) {
+            imageView.layoutParams.height = 1080
+            imageView.layoutParams.width = 1920
+        }
+
         // On Below line we are adding this item view to the container
         container.addView(view)
+
         // On Below line we are simply returning our item view
         return view
     }

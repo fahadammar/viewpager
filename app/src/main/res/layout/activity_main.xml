@@ -7,24 +7,36 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/viewPagerTabLayout"
+        android:text="@string/viewpager_with_tab_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:text="@string/viewpager_with_tab_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
     />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton2"
+        android:id="@+id/viewPagerImageSlider"
+        android:text="@string/image_slider_using_viewpager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/image_slider_using_viewpager"
         android:layout_marginTop="55dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton"
+        app:layout_constraintTop_toBottomOf="@+id/viewPagerTabLayout"
     />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/viewPagerCubeScalingAnimation"
+        android:text="@string/cube_effect_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPagerImageSlider"
+    />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

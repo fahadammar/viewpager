@@ -10,8 +10,8 @@ class ImageSliderModel {
         private val TAG = "imageSliderModel"
         private lateinit var imageList : ArrayList<Int>
 
-        fun getImageSliderAdapter(context : Context) : ImageSliderAdapter{
-            return ImageSliderAdapter(context, getImageList())
+        fun getImageSliderAdapter(context : Context, flag : Boolean) : ImageSliderAdapter{
+            return ImageSliderAdapter(context, getImageList(), flag)
         }
 
         private fun getImageList() : ArrayList<Int>{

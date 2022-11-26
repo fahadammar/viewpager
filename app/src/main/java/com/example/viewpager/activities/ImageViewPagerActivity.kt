@@ -16,6 +16,6 @@ class ImageViewPagerActivity : AppCompatActivity() {
         setContentView(view)
 
         var imageViewPager = binding.imageViewPager
-        imageViewPager.adapter = ImageSliderModel.getImageSliderAdapter(this@ImageViewPagerActivity)
+        imageViewPager.adapter = ImageSliderModel.getImageSliderAdapter(this@ImageViewPagerActivity, false)
     }
 }
