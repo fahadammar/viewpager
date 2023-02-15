@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ViewModel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_fragment">1st Fragment</string>
+    <string name="second_fragment">2nd Fragment</string>
+    <string name="third_fragment">3rd Fragment</string>
+    <string name="button_first_text">View Pager</string>
+    <string name="button_second_text">View Pager 2</string>
+</resources>
