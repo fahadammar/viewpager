@@ -9,10 +9,12 @@
         <entry key="..\:/Andoid_Native/ViewModel/app/src/main/res/layout/activity_main.xml" value="0.390625" />
         <entry key="..\:/Andoid_Native/ViewModel/app/src/main/res/layout/activity_view_pager_first.xml" value="0.390625" />
         <entry key="..\:/Andoid_Native/ViewModel/app/src/main/res/layout/activity_view_pager_second.xml" value="0.2" />
+        <entry key="..\:/Andoid_Native/ViewModel/app/src/main/res/layout/activity_view_pager_two_with_recycler.xml" value="0.390625" />
         <entry key="..\:/Andoid_Native/ViewModel/app/src/main/res/layout/custom_tab_icons.xml" value="0.264" />
         <entry key="..\:/Andoid_Native/ViewModel/app/src/main/res/layout/fragment_first.xml" value="0.390625" />
         <entry key="..\:/Andoid_Native/ViewModel/app/src/main/res/layout/fragment_second.xml" value="0.1" />
         <entry key="..\:/Andoid_Native/ViewModel/app/src/main/res/layout/fragment_third.xml" value="0.390625" />
+        <entry key="..\:/Andoid_Native/ViewModel/app/src/main/res/layout/recycler_item_layout.xml" value="0.38958333333333334" />
       </map>
     </option>
   </component>

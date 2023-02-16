@@ -14,6 +14,9 @@
         android:theme="@style/Theme.ViewModel"
         tools:targetApi="31">
         <activity
+            android:name=".ui.activities.ViewPagerTwoWithRecycler"
+            android:exported="false" />
+        <activity
             android:name=".ui.activities.ViewPagerSecond"
             android:exported="false" />
         <activity

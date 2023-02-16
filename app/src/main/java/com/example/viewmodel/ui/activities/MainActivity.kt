@@ -26,6 +26,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ViewPagerSecond::class.java)
             startActivity(intent)
         }
+
+        binding.button3.setOnClickListener {
+            val intent = Intent(this, ViewPagerTwoWithRecycler::class.java)
+            startActivity(intent)
+        }
     }
 
 }
